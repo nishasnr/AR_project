@@ -1,0 +1,27 @@
+CZ4001 AR Group 9
+
+Asset sources:
+
+	Big Furniture Pack by Vertex Studio:
+	https://assetstore.unity.com/packages/3d/props/furniture/big-furniture-pack-7717
+
+	Free Rug Pack by Azerilo:
+	https://assetstore.unity.com/packages/3d/props/interior/free-rug-pack-118178
+
+	Kitchen Appliance - Low Poly by Alstra Infinite:
+	https://assetstore.unity.com/packages/3d/props/electronics/kitchen-appliance-low-poly-180419
+
+	Picture frames with photos by 3Dfrk:
+	https://assetstore.unity.com/packages/3d/props/interior/picture-frames-with-photos-106907
+
+	Plants by Badri Bebua:
+	https://assetstore.unity.com/packages/3d/vegetation/plants/plants-150261
+
+	Yughues Free Decorative Plants by Nobiax / Yughues:
+	https://assetstore.unity.com/packages/3d/props/interior/yughues-free-decorative-plants-13283
+
+	Next-gen Electronics Pack by Vertex Studio:
+	https://assetstore.unity.com/packages/3d/props/electronics/next-gen-electronics-pack-35718
+
+	PBR Electronics Pack by Next Level 3D:
+	https://assetstore.unity.com/packages/3d/props/electronics/pbr-electronics-pack-38741
