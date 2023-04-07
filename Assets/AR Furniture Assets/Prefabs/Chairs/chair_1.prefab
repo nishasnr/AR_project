@@ -889,6 +889,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6920968065424685641}
+  - component: {fileID: 1226063122141951219}
   m_Layer: 0
   m_Name: Selection
   m_TagString: Untagged
@@ -914,6 +915,19 @@ Transform:
   m_Father: {fileID: 400000}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
+--- !u!65 &1226063122141951219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4564661247361134072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5402582, y: 0.5164814, z: 0.8431714}
+  m_Center: {x: -0.008865486, y: -0.00032468274, z: 0.42389143}
 --- !u!1 &6034807568364690265
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2789397663537815654}
+  - component: {fileID: 6687051325740532702}
   m_Layer: 0
   m_Name: Chair
   m_TagString: Untagged
@@ -948,3 +963,16 @@ Transform:
   m_Father: {fileID: 400000}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: -90, z: 0}
+--- !u!65 &6687051325740532702
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6034807568364690265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5402582, y: 0.5164814, z: 0.8431714}
+  m_Center: {x: -0.008865486, y: -0.00032468274, z: 0.42389143}
