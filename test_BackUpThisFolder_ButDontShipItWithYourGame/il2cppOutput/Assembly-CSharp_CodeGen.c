@@ -50,11 +50,35 @@ extern void PrefabLoader_Awake_m0E083C568618B60818276976C4DEFE95B5F736FB (void);
 extern void PrefabLoader_Update_m17B06AA478693C5E5F689EF7AB10838EDE113364 (void);
 // 0x00000013 System.Void PrefabLoader::MenuOpen(System.Boolean)
 extern void PrefabLoader_MenuOpen_m22FF427FF85940225BEC4C6866E9FBC24ED9AEF9 (void);
-// 0x00000014 System.Void PrefabLoader::SelectChair(System.Int32)
+// 0x00000014 System.Void PrefabLoader::SelectBath(System.Int32)
+extern void PrefabLoader_SelectBath_m9F43985A3E163A7899454FBCDB6D652ED065406B (void);
+// 0x00000015 System.Void PrefabLoader::SelectBed(System.Int32)
+extern void PrefabLoader_SelectBed_m45EA1FFFEFE87917912D58D6DF6100E555BD320B (void);
+// 0x00000016 System.Void PrefabLoader::SelectCabinet(System.Int32)
+extern void PrefabLoader_SelectCabinet_mF692169B03B5E2552461E2AF4CE67E0F3F89AD6B (void);
+// 0x00000017 System.Void PrefabLoader::SelectChair(System.Int32)
 extern void PrefabLoader_SelectChair_m8221D55D60EF2B4274032E1D63BB6FA0FC99D920 (void);
-// 0x00000015 System.Void PrefabLoader::.ctor()
+// 0x00000018 System.Void PrefabLoader::SelectFloor(System.Int32)
+extern void PrefabLoader_SelectFloor_m56A088A3EF0FAD29129DD21C54FAF62DB6499C55 (void);
+// 0x00000019 System.Void PrefabLoader::SelectKitchen(System.Int32)
+extern void PrefabLoader_SelectKitchen_m518083DFE289FF13561BE1BBA51FE2DCEDDAB1DE (void);
+// 0x0000001A System.Void PrefabLoader::SelectLight(System.Int32)
+extern void PrefabLoader_SelectLight_m5BC864B3E7753E7C2245AD6D3761255E0940CC40 (void);
+// 0x0000001B System.Void PrefabLoader::SelectElectronic(System.Int32)
+extern void PrefabLoader_SelectElectronic_mA7FB930EBD54A18F634E301333DF7F0389A4985A (void);
+// 0x0000001C System.Void PrefabLoader::SelectMirror(System.Int32)
+extern void PrefabLoader_SelectMirror_mB88BB5BA6B259ECE9F3CDCCC0BB779C4C418CADF (void);
+// 0x0000001D System.Void PrefabLoader::SelectPlant(System.Int32)
+extern void PrefabLoader_SelectPlant_m30856B7E747C5CDE7A151CC81EEB4AE7E6B4EBFB (void);
+// 0x0000001E System.Void PrefabLoader::SelectSofa(System.Int32)
+extern void PrefabLoader_SelectSofa_mA458243578DD8DEC88E49FCC6FC8E4B6FAD49BCD (void);
+// 0x0000001F System.Void PrefabLoader::SelectTable(System.Int32)
+extern void PrefabLoader_SelectTable_m9F124365472F5479BDA82BC4075514ACB121CDF1 (void);
+// 0x00000020 System.Void PrefabLoader::SelectWallArt(System.Int32)
+extern void PrefabLoader_SelectWallArt_m74D306B0F8D81F66F4414504801A04A3C5EDBB36 (void);
+// 0x00000021 System.Void PrefabLoader::.ctor()
 extern void PrefabLoader__ctor_m6207CADC99EA17A5B41ED2BBF2BD285F542DEFD2 (void);
-static Il2CppMethodPointer s_methodPointers[21] = 
+static Il2CppMethodPointer s_methodPointers[33] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -75,10 +99,22 @@ static Il2CppMethodPointer s_methodPointers[21] =
 	PrefabLoader_Awake_m0E083C568618B60818276976C4DEFE95B5F736FB,
 	PrefabLoader_Update_m17B06AA478693C5E5F689EF7AB10838EDE113364,
 	PrefabLoader_MenuOpen_m22FF427FF85940225BEC4C6866E9FBC24ED9AEF9,
+	PrefabLoader_SelectBath_m9F43985A3E163A7899454FBCDB6D652ED065406B,
+	PrefabLoader_SelectBed_m45EA1FFFEFE87917912D58D6DF6100E555BD320B,
+	PrefabLoader_SelectCabinet_mF692169B03B5E2552461E2AF4CE67E0F3F89AD6B,
 	PrefabLoader_SelectChair_m8221D55D60EF2B4274032E1D63BB6FA0FC99D920,
+	PrefabLoader_SelectFloor_m56A088A3EF0FAD29129DD21C54FAF62DB6499C55,
+	PrefabLoader_SelectKitchen_m518083DFE289FF13561BE1BBA51FE2DCEDDAB1DE,
+	PrefabLoader_SelectLight_m5BC864B3E7753E7C2245AD6D3761255E0940CC40,
+	PrefabLoader_SelectElectronic_mA7FB930EBD54A18F634E301333DF7F0389A4985A,
+	PrefabLoader_SelectMirror_mB88BB5BA6B259ECE9F3CDCCC0BB779C4C418CADF,
+	PrefabLoader_SelectPlant_m30856B7E747C5CDE7A151CC81EEB4AE7E6B4EBFB,
+	PrefabLoader_SelectSofa_mA458243578DD8DEC88E49FCC6FC8E4B6FAD49BCD,
+	PrefabLoader_SelectTable_m9F124365472F5479BDA82BC4075514ACB121CDF1,
+	PrefabLoader_SelectWallArt_m74D306B0F8D81F66F4414504801A04A3C5EDBB36,
 	PrefabLoader__ctor_m6207CADC99EA17A5B41ED2BBF2BD285F542DEFD2,
 };
-static const int32_t s_InvokerIndices[21] = 
+static const int32_t s_InvokerIndices[33] = 
 {
 	5566,
 	4481,
@@ -100,13 +136,25 @@ static const int32_t s_InvokerIndices[21] =
 	5675,
 	4386,
 	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
+	4453,
 	5675,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	21,
+	33,
 	s_methodPointers,
 	0,
 	NULL,

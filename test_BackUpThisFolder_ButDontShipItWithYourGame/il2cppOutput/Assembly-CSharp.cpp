@@ -1941,14 +1941,38 @@ struct AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED_StaticFields
 // PrefabLoader
 struct PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
+	// UnityEngine.GameObject[] PrefabLoader::bathPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___bathPrefabs_4;
+	// UnityEngine.GameObject[] PrefabLoader::bedPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___bedPrefabs_5;
+	// UnityEngine.GameObject[] PrefabLoader::cabinetPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___cabinetPrefabs_6;
 	// UnityEngine.GameObject[] PrefabLoader::chairPrefabs
-	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___chairPrefabs_4;
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___chairPrefabs_7;
+	// UnityEngine.GameObject[] PrefabLoader::floorPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___floorPrefabs_8;
+	// UnityEngine.GameObject[] PrefabLoader::kitchenPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___kitchenPrefabs_9;
+	// UnityEngine.GameObject[] PrefabLoader::lightPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___lightPrefabs_10;
+	// UnityEngine.GameObject[] PrefabLoader::electronicPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___electronicPrefabs_11;
+	// UnityEngine.GameObject[] PrefabLoader::mirrorPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___mirrorPrefabs_12;
+	// UnityEngine.GameObject[] PrefabLoader::plantPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___plantPrefabs_13;
+	// UnityEngine.GameObject[] PrefabLoader::sofaPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___sofaPrefabs_14;
+	// UnityEngine.GameObject[] PrefabLoader::tablePrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___tablePrefabs_15;
+	// UnityEngine.GameObject[] PrefabLoader::wallartPrefabs
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___wallartPrefabs_16;
 	// UnityEngine.XR.Interaction.Toolkit.AR.ARPlacementInteractable PrefabLoader::AR_Interactable
-	ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* ___AR_Interactable_5;
+	ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* ___AR_Interactable_17;
 	// UnityEngine.GameObject PrefabLoader::selectedPrefab
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___selectedPrefab_6;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___selectedPrefab_18;
 	// TMPro.TMP_Text PrefabLoader::selectedText
-	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___selectedText_7;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___selectedText_19;
 };
 
 // UnityEngine.EventSystems.UIBehaviour
@@ -3815,8 +3839,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_Awake_m0E083C568618B6081827
 		NullCheck(L_0);
 		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_1;
 		L_1 = GameObject_GetComponent_TisARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A_m9EF54779DD58691E746C95AF41C5FC8F61AC0693(L_0, GameObject_GetComponent_TisARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A_m9EF54779DD58691E746C95AF41C5FC8F61AC0693_RuntimeMethod_var);
-		__this->___AR_Interactable_5 = L_1;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___AR_Interactable_5), (void*)L_1);
+		__this->___AR_Interactable_17 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___AR_Interactable_17), (void*)L_1);
 		// }
 		return;
 	}
@@ -3834,10 +3858,121 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_MenuOpen_m22FF427FF85940225
 {
 	{
 		// AR_Interactable.enabled = !open;
-		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_0 = __this->___AR_Interactable_5;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_0 = __this->___AR_Interactable_17;
 		bool L_1 = ___open0;
 		NullCheck(L_0);
 		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_0, (bool)((((int32_t)L_1) == ((int32_t)0))? 1 : 0), NULL);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectBath(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectBath_m9F43985A3E163A7899454FBCDB6D652ED065406B (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = bathPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___bathPrefabs_4;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectBed(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectBed_m45EA1FFFEFE87917912D58D6DF6100E555BD320B (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = bedPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___bedPrefabs_5;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectCabinet(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectCabinet_mF692169B03B5E2552461E2AF4CE67E0F3F89AD6B (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = cabinetPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___cabinetPrefabs_6;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
 		// }
 		return;
 	}
@@ -3853,21 +3988,354 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectChair_m8221D55D60EF2B
 	}
 	{
 		// selectedPrefab = chairPrefabs[index];
-		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___chairPrefabs_4;
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___chairPrefabs_7;
 		int32_t L_1 = ___index0;
 		NullCheck(L_0);
 		int32_t L_2 = L_1;
 		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
-		__this->___selectedPrefab_6 = L_3;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_6), (void*)L_3);
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
 		// AR_Interactable.placementPrefab = selectedPrefab;
-		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_5;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_6;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
 		NullCheck(L_4);
 		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
 		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
-		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_7;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_6;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectFloor(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectFloor_m56A088A3EF0FAD29129DD21C54FAF62DB6499C55 (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = floorPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___floorPrefabs_8;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectKitchen(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectKitchen_m518083DFE289FF13561BE1BBA51FE2DCEDDAB1DE (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = kitchenPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___kitchenPrefabs_9;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectLight(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectLight_m5BC864B3E7753E7C2245AD6D3761255E0940CC40 (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = lightPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___lightPrefabs_10;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectElectronic(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectElectronic_mA7FB930EBD54A18F634E301333DF7F0389A4985A (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = electronicPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___electronicPrefabs_11;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectMirror(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectMirror_mB88BB5BA6B259ECE9F3CDCCC0BB779C4C418CADF (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = mirrorPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___mirrorPrefabs_12;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectPlant(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectPlant_m30856B7E747C5CDE7A151CC81EEB4AE7E6B4EBFB (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = plantPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___plantPrefabs_13;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectSofa(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectSofa_mA458243578DD8DEC88E49FCC6FC8E4B6FAD49BCD (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = sofaPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___sofaPrefabs_14;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectTable(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectTable_m9F124365472F5479BDA82BC4075514ACB121CDF1 (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = tablePrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___tablePrefabs_15;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
+		NullCheck(L_7);
+		String_t* L_8;
+		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
+		String_t* L_9;
+		L_9 = String_Concat_mAF2CE02CC0CB7460753D0A1A91CCF2B1E9804C5D(_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540, L_8, NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< String_t* >::Invoke(66 /* System.Void TMPro.TMP_Text::set_text(System.String) */, L_6, L_9);
+		// }
+		return;
+	}
+}
+// System.Void PrefabLoader::SelectWallArt(System.Int32)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PrefabLoader_SelectWallArt_m74D306B0F8D81F66F4414504801A04A3C5EDBB36 (PrefabLoader_t15F9B16AE87B72D7AB339993D8357B059044D0B6* __this, int32_t ___index0, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6C8B8655150B7D1B5B8E5325B700709EF27CA540);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// selectedPrefab = wallartPrefabs[index];
+		GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* L_0 = __this->___wallartPrefabs_16;
+		int32_t L_1 = ___index0;
+		NullCheck(L_0);
+		int32_t L_2 = L_1;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3 = (L_0)->GetAt(static_cast<il2cpp_array_size_t>(L_2));
+		__this->___selectedPrefab_18 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___selectedPrefab_18), (void*)L_3);
+		// AR_Interactable.placementPrefab = selectedPrefab;
+		ARPlacementInteractable_t9EFF45579CF20DF6382D200DF41970F801FA009A* L_4 = __this->___AR_Interactable_17;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = __this->___selectedPrefab_18;
+		NullCheck(L_4);
+		ARPlacementInteractable_set_placementPrefab_m398111C81631149B92E9CFA1523D2A800DA9AF64_inline(L_4, L_5, NULL);
+		// selectedText.text = "Current Selection:\n" + selectedPrefab.name;
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_6 = __this->___selectedText_19;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7 = __this->___selectedPrefab_18;
 		NullCheck(L_7);
 		String_t* L_8;
 		L_8 = Object_get_name_mAC2F6B897CF1303BA4249B4CB55271AFACBB6392(L_7, NULL);
