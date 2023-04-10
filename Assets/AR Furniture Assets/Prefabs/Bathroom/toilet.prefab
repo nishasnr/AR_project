@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 8809153435300524208}
   - component: {fileID: 1321035036620864561}
   m_Layer: 0
-  m_Name: Toilet
+  m_Name: toilet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -726,7 +726,7 @@ GameObject:
   - component: {fileID: 5407171357501000376}
   m_Layer: 0
   m_Name: Selection
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

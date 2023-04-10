@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 1710206876125084899}
   m_Layer: 0
   m_Name: Sel
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 3211630800712778998}
   - component: {fileID: 6750402176880565069}
   m_Layer: 0
-  m_Name: Monitor
+  m_Name: monitor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

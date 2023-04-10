@@ -143,7 +143,7 @@ GameObject:
   - component: {fileID: 2326001011655258581}
   - component: {fileID: 3745507629473291738}
   m_Layer: 0
-  m_Name: Mouse
+  m_Name: mouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 2084444032826357891}
   m_Layer: 0
   m_Name: Sel
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6934529019046183716}
   - component: {fileID: 8076669567761066649}
   m_Layer: 0
-  m_Name: Flasket
+  m_Name: flasket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -606,7 +606,7 @@ GameObject:
   - component: {fileID: 6168677640854123642}
   m_Layer: 0
   m_Name: Selection
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

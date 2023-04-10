@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 3432390559945735323}
   - component: {fileID: 3926475978369633154}
   m_Layer: 0
-  m_Name: Shower
+  m_Name: shower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -975,7 +975,7 @@ GameObject:
   - component: {fileID: 291859841632917545}
   m_Layer: 0
   m_Name: Selection
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

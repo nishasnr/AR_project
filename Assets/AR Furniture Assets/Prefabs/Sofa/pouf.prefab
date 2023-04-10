@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6397096443626472133}
   - component: {fileID: 3227739892515900385}
   m_Layer: 0
-  m_Name: Pouf
+  m_Name: pouf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -690,7 +690,7 @@ GameObject:
   - component: {fileID: 1799548172717993161}
   m_Layer: 0
   m_Name: Sel
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 2585752407579434424}
   m_Layer: 0
   m_Name: Sel
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

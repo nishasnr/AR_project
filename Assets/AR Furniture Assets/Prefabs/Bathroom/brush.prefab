@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 5656358988271529364}
   - component: {fileID: 3639971531160412010}
   m_Layer: 0
-  m_Name: Brush
+  m_Name: brush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -809,7 +809,7 @@ GameObject:
   - component: {fileID: 2319762446026710888}
   m_Layer: 0
   m_Name: Selection
-  m_TagString: Untagged
+  m_TagString: DeleteOption
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
